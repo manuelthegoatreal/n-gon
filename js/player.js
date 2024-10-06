@@ -3084,7 +3084,7 @@ const m = {
                 if (tech.isLaserField) {
                     simulation.ephemera.push({
                         name: "laser field", //used to find this array element in simulation.removeEphemera()
-                        count: 20 + Math.floor(m.maxEnergy * 30 * 0.0018 / tech.laserDrain), //how many cycles the ephemera lasts, scales with max energy
+                        count: 20 + Math.floor(m.maxEnergy * 30000000000 * 0.0018 / tech.laserDrain), //how many cycles the ephemera lasts, scales with max energy
                         do() {
                             this.count--
                             if (this.count < 0) simulation.removeEphemera(this.name)
