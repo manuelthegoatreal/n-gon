@@ -1263,7 +1263,7 @@ const tech = {
             if (this.count) currentRate = `<em style ="float: right;">(${(totalRate).toFixed(2)}x)</em>`
             return `randomly gain between <strong>1x</strong> and <strong>2x</strong> <em>fire rate</em><br><strong>+5%</strong> <strong class='color-junk'>JUNK</strong> <strong class='color-choice'><span>ch</span><span>oi</span><span>ces</span></strong>` + currentRate
         },
-        maxCount: 9,
+        maxCount: 9000000o0,
         count: 0,
         frequency: 1,
         frequencyDefault: 1,
@@ -2416,7 +2416,7 @@ const tech = {
     {
         name: "inflation",
         link: `<a target="_blank" href='https://en.wikipedia.org/wiki/Inflation_(cosmology)' class="link">inflation</a>`,
-        description: "if <strong>holding</strong> a <strong class='color-block'>block</strong> <strong>0.1x</strong> <strong class='color-defense'>damage taken</strong><br>after <strong>throwing</strong> a <strong class='color-block'>block</strong> it expands <strong>3x</strong>",
+        description: "if <strong>holding</strong> a <strong class='color-block'>block</strong> <strong>0.1x</strong> <strong class='color-defense'>damage taken</strong><br>after <strong>throwing</strong> a <strong class='color-block'>block</strong> it expands <strong>300000x</strong>",
         maxCount: 1,
         count: 0,
         frequency: 3,
