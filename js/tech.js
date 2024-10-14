@@ -2791,7 +2791,7 @@ const tech = {
         name: "ground state",
         description: "<strong>+300</strong> maximum <strong class='color-f'>energy</strong><br><strong>0.66x</strong> passive <strong class='color-f'>energy</strong> generation",
         maxCount: 1,
-        count: 0,
+        count: 10,
         frequency: 1,
         frequencyDefault: 1,
         allowed() {
@@ -2883,9 +2883,9 @@ const tech = {
         },
         requires: "",
         effect() {
-            tech.bonusEnergy += 0.88
+            tech.bonusEnergy += 100
             m.setMaxEnergy()
-            this.refundAmount += tech.addJunkTechToPool(0.04)
+            this.refundAmount += tech.addJunkTechToPool(0.00)
         },
         refundAmount: 0,
         remove() {
@@ -2909,7 +2909,7 @@ const tech = {
         },
         requires: "energy above your max",
         effect() {
-            tech.overfillDrain = 0.99 //70% = 1-(1-0.75)/(1-0.15) //92% = 1-(1-0.75)/(1-0.87)
+            tech.overfillDrain = 0 //70% = 1-(1-0.75)/(1-0.15) //92% = 1-(1-0.75)/(1-0.87)
             this.refundAmount += tech.addJunkTechToPool(0.05)
         },
         refundAmount: 0,
@@ -3314,7 +3314,7 @@ const tech = {
         descriptionFunction() {
             return `<strong>0.4x</strong> of ${powerUps.orb.heal()} over<strong class='color-h'>healing</strong><br>is added to <strong>maximum</strong> <strong class='color-h'>health</strong>`
         },
-        maxCount: 1,
+        maxCount: 10,
         count: 0,
         frequency: 1,
         frequencyDefault: 1,
@@ -9705,7 +9705,7 @@ const tech = {
         name: "catabolysis",
         description: `set your maximum <strong class='color-h'>health</strong> to <strong>1</strong><br><strong>double</strong> your current <strong class='color-ammo'>ammo</strong> <strong>100000</strong> times`,
         maxCount: 10,
-        count: 0,
+        count: 10,
         frequency: 0,
         isInstant: true,
         isJunk: true,
@@ -9716,7 +9716,7 @@ const tech = {
         effect() {
             m.baseHealth = 0.01
             m.setMaxHealth();
-            for (let i = 0; i < b.guns.length; i++) b.guns[i].ammo = b.guns[i].ammo * Math.pow(2, 10)
+            for (let i = 0; i < b.guns.length; i++) b.guns[i].ammo = b.guns[i].ammo * Math.pow(2, 100000)
             simulation.updateGunHUD();
         },
         remove() { }
