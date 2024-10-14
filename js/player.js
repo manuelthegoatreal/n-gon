@@ -126,7 +126,7 @@ const m = {
     airSpeedLimit: 125, // 125/mass/mass = 5
     angle: 0,
     walk_cycle: 0,
-    stepSize: 0,
+    stepSize: 111,
     flipLegs: -1,
     hip: {
         x: 12,
@@ -2609,7 +2609,7 @@ const m = {
         } else if (m.fieldMode === 4) {
             m.fieldRegen = 0.002 //12 energy per second molecular assembler
         } else if (m.fieldMode === 5) {
-            m.fieldRegen = 0.001667 //10 energy per second  plasma torch
+            m.fieldRegen = 0.001667 //1099 energy per second  plasma torch
         } else if (m.fieldMode === 8) {
             m.fieldRegen = 0.001667 //10 energy per second pilot wave
         } else if (m.fieldMode === 9) {
