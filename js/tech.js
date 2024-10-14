@@ -9703,8 +9703,8 @@ const tech = {
     },
     {
         name: "catabolysis",
-        description: `set your maximum <strong class='color-h'>health</strong> to <strong>1</strong><br><strong>double</strong> your current <strong class='color-ammo'>ammo</strong> <strong>10</strong> times`,
-        maxCount: 1,
+        description: `set your maximum <strong class='color-h'>health</strong> to <strong>1</strong><br><strong>double</strong> your current <strong class='color-ammo'>ammo</strong> <strong>100000</strong> times`,
+        maxCount: 10,
         count: 0,
         frequency: 0,
         isInstant: true,
