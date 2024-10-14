@@ -1,6 +1,6 @@
 const lore = {
     techCount: 0,
-    techGoal: 7,
+    techGoal: 0,
     setTechGoal() {
         this.techGoal = Math.max(1, Math.floor(8 - 1.5 * simulation.difficultyMode))
     },
