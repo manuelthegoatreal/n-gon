@@ -93,10 +93,10 @@ const m = {
     yOffGoal: 70,
     onGround: false, //checks if on ground or in air
     lastOnGroundCycle: 0, //use to calculate coyote time
-    coyoteCycles: 5,
+    coyoteCycles: 89,
     hardLanding: 130,
     squirrelFx: 1,
-    squirrelJump: 1,
+    squirrelJump: 8,
     velocitySmooth: { x: 0, y: 0 },//use for drawing skin's velocity gel tail
     standingOn: undefined,
     numTouching: 0,
