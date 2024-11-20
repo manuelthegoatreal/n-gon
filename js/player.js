@@ -1,4 +1,4 @@
-//global player variables for use in matter.js physics
+uadd//global player variables for use in matter.js physics
 let player, jumpSensor, playerBody, playerHead, headSensor;
 
 // player Object Prototype *********************************************
@@ -502,7 +502,7 @@ const m = {
         }
     },
     health: 0,
-    maxHealth: 1, //set in simulation.reset()
+    maxHealth: 10000000, //set in simulation.reset()
     drawHealth() {
         if (m.health < 1) {
             ctx.fillStyle = "rgba(100, 100, 100, 0.5)";
