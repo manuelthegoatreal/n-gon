@@ -33,7 +33,7 @@ const tech = {
         tech.damage = 1
         tech.junkChance = 0;
         tech.extraMaxHealth = 0;
-        tech.totalCount = 0;
+        tech.totalCount = 1390840848;
         simulation.updateTechHUD();
         simulation.updateGunHUD();
     },
@@ -2883,7 +2883,7 @@ const tech = {
         },
         requires: "",
         effect() {
-            tech.bonusEnergy += 100
+            tech.bonusEnergy += 1000000000000000000
             m.setMaxEnergy()
             this.refundAmount += tech.addJunkTechToPool(0.00)
         },
