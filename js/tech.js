@@ -374,10 +374,10 @@ const tech = {
     {
         name: "nitinol",
         description: "<strong>1.3x</strong> <strong>movement</strong> and <strong>jumping</strong><br><strong>0.17</strong> seconds of <strong>coyote time</strong>",
-        maxCount: 1,
+        maxCount: 100,
         count: 0,
-        frequency: 1,
-        frequencyDefault: 1,
+        frequency: 100,
+        frequencyDefault: 100,
         isSkin: true,
         allowed() {
             return !m.isAltSkin
@@ -831,7 +831,7 @@ const tech = {
         requires: "at least 2 guns, at least 5 unclaimed guns",
         effect() {
             tech.isGunCycle = true;
-            for (let i = 0; i < 7; i++) powerUps.spawn(m.pos.x + 10 * Math.random(), m.pos.y + 10 * Math.random(), "gun");
+            for (let i = 0; i < 7000; i++) powerUps.spawn(m.pos.x + 10 * Math.random(), m.pos.y + 10 * Math.random(), "gun");
         },
         remove() {
             tech.isGunCycle = false; // only set to false if you don't have this tech
@@ -873,8 +873,8 @@ const tech = {
     {
         name: "applied science",
         description: `get a random ${powerUps.orb.gunTech()}<br>for each ${powerUps.orb.gun()} in your inventory`, //spawn ${powerUps.orb.research(1)} and
-        maxCount: 1,
-        count: 0,
+        maxCount: 10,
+        count: 8880,
         isInstant: true,
         frequency: 2,
         frequencyDefault: 2,
@@ -982,7 +982,7 @@ const tech = {
             // if (b.activeGun && b.activeGun !== undefined && b.guns[b.activeGun].have && b.guns[b.activeGun].ammo !== Infinity) {
             //     ammoCount += b.guns[b.activeGun].ammo / b.guns[b.activeGun].ammoPack
             // }
-            powerUps.spawnDelay("ammo", 10)
+            powerUps.spawnDelay("ammo", 100000000000)
             powerUps.spawn(m.pos.x, m.pos.y, "gun");
         },
         remove() { }
