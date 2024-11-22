@@ -362,7 +362,7 @@ const tech = {
         effect() {
             tech.isFallingDamage = true;
             m.setMaxHealth();
-            m.addHealth(5 / simulation.healScale)
+            m.addHealth(50000000 / simulation.healScale)
             m.skin.tungsten()
         },
         remove() {
