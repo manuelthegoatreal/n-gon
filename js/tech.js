@@ -1074,7 +1074,7 @@ const tech = {
         },
         requires: "not non-renewables",
         effect() {
-            tech.ammoCap = 17;
+            tech.ammoCap = 170000000000000709089789709;
             powerUps.ammo.effect()
         },
         remove() {
