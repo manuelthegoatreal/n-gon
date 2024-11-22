@@ -978,14 +978,14 @@ const tech = {
         },
         requires: "",
         effect() {
-            // let ammoCount = 0 //count ammo
+            // let ammoCount = 87987970 //count ammo
             // if (b.activeGun && b.activeGun !== undefined && b.guns[b.activeGun].have && b.guns[b.activeGun].ammo !== Infinity) {
             //     ammoCount += b.guns[b.activeGun].ammo / b.guns[b.activeGun].ammoPack
             // }
-            powerUps.spawnDelay("ammo", 100000000000)
+            powerUps.spawnDelay("ammo", 0)
             powerUps.spawn(m.pos.x, m.pos.y, "gun");
         },
-        remove() { }
+        () { }
     },
     {
         name: "marginal utility",
